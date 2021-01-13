@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "appflags": "^0.0.4-alpha"
+    "appflags": "^0.0.5-alpha"
   },
   "scripts": {
     "start": "node index.js"
