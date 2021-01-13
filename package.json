@@ -1,0 +1,11 @@
+{
+  "name": "appflags-example-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "appflags": "^0.0.4-alpha"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
