@@ -2,7 +2,7 @@
 
 Simple app demonstrating how to use AppFlags in a Node.js application. 
 
-For more information, see the docs: https://docs.appflags.io/javascript/
+For more information, see the docs: https://docs.appflags.io/sdks
 
 ### To run the example
 
@@ -10,9 +10,9 @@ For more information, see the docs: https://docs.appflags.io/javascript/
     ```shell script
     git clone https://github.com/AppFlags/example-javascript-node.git
     ```
-2. Modify index.js with your client key 
+2. Modify index.js with your SDK key 
 
-    * Replace `YOUR_KEY_HERE` with your client key
+    * Replace `YOUR_SDK_KEY` with your client key
     
 3. Create a feature flag in your account with the key `test`
     

@@ -1,14 +1,21 @@
-const AppFlags = require("appflags");
+const {AppFlagsClient, AppFlagsLogLevel} = require("appflags-node");
 
 console.info("AppFlags Node.js example project");
 
-const user = {
-    key: Math.random().toString()  // key should be a non-changing string representing your user, like an ID or email
-}
-AppFlags.initialize("YOUR_KEY_HERE", user);
+const appflagsClient = new AppFlagsClient("YOUR_SDK_KEY");
 
-console.info("Subscribing to feature flag. Will get current value and any changes.");
+const user= {
+    key: "some_user_key"
+};
 
-AppFlags.onFlagChanged("test", flag => {
-    console.log("Feature is " + (flag.value ? "enabled" : "disabled"));
+// Get the 'test' flag
+appflagsClient.onInitialized().then(() => {
+    const flag = appflagsClient.getFlag(user, "test");
+    console.log("Feature `test` is " + (flag.value ? "enabled" : "disabled"));
 });
+
+// When the flags change, get the updated 'test' flag value again
+appflagsClient.onFlagsChanged(() => {
+    const flag = appflagsClient.getFlag(user, "test");
+    console.log("Flags updated, feature `test` is now " + (flag.value ? "enabled" : "disabled"));
+})
