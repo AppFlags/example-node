@@ -2,13 +2,13 @@
 
 Simple app demonstrating how to use AppFlags in a Node.js application. 
 
-For more information, see the docs: https://docs.appflags.io/sdks
+For more information, see the docs: https://docs.appflags.io/sdks/node
 
 ### To run the example
 
 1. Clone this repository
     ```shell script
-    git clone https://github.com/AppFlags/example-javascript-node.git
+    git clone https://github.com/AppFlags/example-node.git
     ```
 2. Modify index.js with your SDK key 
 
