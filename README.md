@@ -14,7 +14,7 @@ For more information, see the docs: https://docs.appflags.io/sdks/node
 
     * Replace `YOUR_SDK_KEY` with your client key
     
-3. Create a feature flag in your account with the key `test`
+3. Create a `boolean` feature flag in your account with the key `test`
     
 4. Install packages and run the application
     ```shell script
